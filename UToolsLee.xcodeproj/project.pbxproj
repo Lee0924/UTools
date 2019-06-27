@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B554E0722C46A860053F506 /* UITools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B554E0522C46A850053F506 /* UITools.m */; };
+		9B554E0722C46A860053F506 /* UIButtonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B554E0522C46A850053F506 /* UIButtonTools.m */; };
+		9B554E0B22C49E9E0053F506 /* UILabealTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B554E0A22C49E9E0053F506 /* UILabealTools.m */; };
 		9B57B7AF22C350C20055B25A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57B7AE22C350C20055B25A /* AppDelegate.m */; };
 		9B57B7B222C350C20055B25A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57B7B122C350C20055B25A /* ViewController.m */; };
 		9B57B7B522C350C20055B25A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B57B7B322C350C20055B25A /* Main.storyboard */; };
@@ -37,8 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B554E0522C46A850053F506 /* UITools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITools.m; sourceTree = "<group>"; };
-		9B554E0622C46A850053F506 /* UITools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITools.h; sourceTree = "<group>"; };
+		9B554E0522C46A850053F506 /* UIButtonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonTools.m; sourceTree = "<group>"; };
+		9B554E0622C46A850053F506 /* UIButtonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonTools.h; sourceTree = "<group>"; };
+		9B554E0922C49E9E0053F506 /* UILabealTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabealTools.h; sourceTree = "<group>"; };
+		9B554E0A22C49E9E0053F506 /* UILabealTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabealTools.m; sourceTree = "<group>"; };
 		9B57B7AA22C350C20055B25A /* UToolsLee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UToolsLee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B57B7AD22C350C20055B25A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B57B7AE22C350C20055B25A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,10 +90,19 @@
 		9B554E0422C46A850053F506 /* ButtonTool */ = {
 			isa = PBXGroup;
 			children = (
-				9B554E0622C46A850053F506 /* UITools.h */,
-				9B554E0522C46A850053F506 /* UITools.m */,
+				9B554E0622C46A850053F506 /* UIButtonTools.h */,
+				9B554E0522C46A850053F506 /* UIButtonTools.m */,
 			);
 			path = ButtonTool;
+			sourceTree = "<group>";
+		};
+		9B554E0822C49D600053F506 /* LabealTool */ = {
+			isa = PBXGroup;
+			children = (
+				9B554E0922C49E9E0053F506 /* UILabealTools.h */,
+				9B554E0A22C49E9E0053F506 /* UILabealTools.m */,
+			);
+			path = LabealTool;
 			sourceTree = "<group>";
 		};
 		9B57B7A122C350C20055B25A = {
@@ -121,6 +133,7 @@
 				9B57B7AE22C350C20055B25A /* AppDelegate.m */,
 				9B57B7B022C350C20055B25A /* ViewController.h */,
 				9B57B7B122C350C20055B25A /* ViewController.m */,
+				9B554E0822C49D600053F506 /* LabealTool */,
 				9B554E0422C46A850053F506 /* ButtonTool */,
 				9B57B7B322C350C20055B25A /* Main.storyboard */,
 				9B57B7B622C350C60055B25A /* Assets.xcassets */,
@@ -289,8 +302,9 @@
 			files = (
 				9B57B7B222C350C20055B25A /* ViewController.m in Sources */,
 				9B57B7BD22C350C60055B25A /* main.m in Sources */,
+				9B554E0B22C49E9E0053F506 /* UILabealTools.m in Sources */,
 				9B57B7AF22C350C20055B25A /* AppDelegate.m in Sources */,
-				9B554E0722C46A860053F506 /* UITools.m in Sources */,
+				9B554E0722C46A860053F506 /* UIButtonTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
