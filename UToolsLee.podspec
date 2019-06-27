@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'UToolsLee'
-s.version      = '0.0.4'
+s.version      = '0.0.5'
 #总结
 s.summary      = '快速创建UIButton以及UILabeal'
 # 说明
@@ -31,7 +31,7 @@ s.requires_arc = true
 
 #   按钮及Label
 s.subspec 'UIToolsLee' do |ss|
-ss.source_files = "UToolsLee/ButtonTool/*.{h,m}", "UToolsLee/LabealTool/*.{h,m}"
+ss.source_files = "UToolsLee/**/*.{h,m}"
     ss.frameworks = "Foundation","UIKit"
 # ss.dependency "Masonry", '~> 1.1.0'
 end
