@@ -65,7 +65,7 @@
     return btn;
 }
 
-- (UIButton *)createButtonWithBGImageName:(NSString *)bgImageName addTarget:(id)target action:(SEL)action title:(NSString *)title titleColor:(UIColor *)titleColor isSizeToFit:(BOOL)isSizeToFit superView:(UIView *)superView
+- (UIButton *)createButtonWithBGImageName:(NSString *)bgImageName addTarget:(id)target action:(SEL)action title:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font isSizeToFit:(BOOL)isSizeToFit superView:(UIView *)superView
 {
     UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
     if (target && action) {
@@ -73,6 +73,7 @@
     }
     [btn setBackgroundImage:[UIImage imageNamed:bgImageName] forState:UIControlStateNormal];
     [btn setTitle:title forState:UIControlStateNormal];
+    btn.titleLabel.font = font;
     if (titleColor) {
         [btn setTitleColor:titleColor forState:UIControlStateNormal];
     }else {
@@ -85,6 +86,12 @@
     return btn;
 }
 
+- (UIButton *)createButtonWithImageName:(NSString *)imageName title:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font addTarget:(id)target action:(SEL)action superView:(UIView *)superView
+{
+    UIButton *btn = [self createButtonWithTitle:title titleColor:titleColor titleFont:font addTarget:target action:action superView:superView];
+    [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    return btn;
+}
 
 
 - (BlockButton *)createBlockButtonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font block:(void(^)(UIButton *button))block{

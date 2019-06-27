@@ -24,15 +24,23 @@
 - (UIButton *)createButtonWithBGImageName:(NSString *)bgImageName addTarget:(id)target action:(SEL)action;
 
 /**
- * bgImageName 图片名称
+ * bgImageName 背景图片名称
  * target      target
  * action      action
  * title       title文字
  * titleColor  文字颜色
  * isSizeToFit 是否支持SizeToFit
  */
-- (UIButton *)createButtonWithBGImageName:(NSString *)bgImageName addTarget:(id)target action:(SEL)action title:(NSString *)title titleColor:(UIColor *)titleColor isSizeToFit:(BOOL)isSizeToFit superView:(UIView *)superView;
+- (UIButton *)createButtonWithBGImageName:(NSString *)bgImageName addTarget:(id)target action:(SEL)action title:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font isSizeToFit:(BOOL)isSizeToFit superView:(UIView *)superView;
 
+/**
+ * bgImageName 图片名称
+ * target      target
+ * action      action
+ * title       title文字
+ * titleColor  文字颜色
+ */
+- (UIButton *)createButtonWithImageName:(NSString *)imageName title:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font addTarget:(id)target action:(SEL)action superView:(UIView *)superView;
 
 - (BlockButton *)createBlockButtonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font block:(void(^)(UIButton *button))block;
 
