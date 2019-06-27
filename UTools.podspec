@@ -10,11 +10,11 @@ s.description  = <<-DESC
     快速创建UIButton以及UILabeal
 DESC
 #   项目地址
-s.homepage     = 'https://gitlab.com/Lee0924/CommonControls'
+s.homepage     = 'https://github.com/Lee0924/UTools'
 # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 s.author             = { "Lee0924" => "Leejialin0924@163.com" }
 s.platform     = :ios, "9.0"
-s.source       = { :git => "https://github.com/Lee0924/UToolsLee.git", :tag => "v#{s.version}"}
+s.source       = { :git => "https://github.com/Lee0924/UTools.git", :tag => "v#{s.version}"}
 #   开源许可
 s.license          = "MIT"
 
@@ -31,7 +31,7 @@ s.requires_arc = true
 
 #   按钮及Label
 s.subspec 'UITools' do |ss|
-    ss.source_files = "UTools/UITools/*.{h,m}"
+    ss.source_files = "UTools/ButtonTool/*.{h,m}"
     ss.frameworks = "Foundation","UIKit"
 # ss.dependency "Masonry", '~> 1.1.0'
 end
