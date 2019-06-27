@@ -83,27 +83,18 @@
  *  创建lable，设置标题颜色（颜色为nil时，为黑色） 文本字体大小
  *
  *  @param frame     frame description
+ *  @param text      text
  *  @param textColor textColor description
  *  @param size      size description
- *
+ *  @param superView superView
  *  @return lable
  */
-- (UILabel *)createLableWithFrame:(CGRect)frame textColor:(UIColor *)textColor textFontOfSize:(CGFloat)size;
+- (UILabel *)createLableWithFrame:(CGRect)frame
+                             text:(NSString *)text
+                        textColor:(UIColor *)textColor
+                   textFontOfSize:(CGFloat)size
+                        superView:(UIView *)superView;
 
-
-/**
- 创建lable，设置标题颜色（颜色为nil时，为黑色） 文本字体大小
- 
- @param frame frame
- @param textColor textColor
- @param font font
- @return return a label
- */
-- (UILabel *)createLableWithFrame:(CGRect)frame textColor:(UIColor *)textColor font:(UIFont *)font;
-
-
-- (UILabel *)createLableWithTextColor:(UIColor *)textColor textFontOfSize:(CGFloat)size;
-- (UILabel *)createLableWithTextColor:(UIColor *)textColor font:(UIFont *)font;
 
 @end
 

@@ -188,7 +188,11 @@
     //btn.layer.borderColor = [[UIColor lightGrayColor] CGColor];
 }
 
-- (UILabel *)createLableWithFrame:(CGRect)frame textColor:(UIColor *)textColor textFontOfSize:(CGFloat)size;
+- (UILabel *)createLableWithFrame:(CGRect)frame
+                             text:(NSString *)text
+                        textColor:(UIColor *)textColor
+                   textFontOfSize:(CGFloat)size
+                        superView:(UIView *)superView
 {
     UILabel * lab = [[UILabel alloc]initWithFrame:frame];
     if (textColor) {
@@ -196,51 +200,16 @@
     }else {
         lab.textColor = [UIColor blackColor];
     }
-    lab.backgroundColor = [UIColor clearColor];
-    lab.font = [UIFont systemFontOfSize:size];
-    return lab;
-}
-
-- (UILabel *)createLableWithFrame:(CGRect)frame textColor:(UIColor *)textColor font:(UIFont *)font
-{
-    UILabel * lab = [[UILabel alloc]initWithFrame:frame];
-    if (textColor) {
-        lab.textColor = textColor;
-    }else {
-        lab.textColor = [UIColor blackColor];
-    }
-    lab.backgroundColor = [UIColor clearColor];
-    lab.font = font;
     
-    return lab;
-}
-
-- (UILabel *)createLableWithTextColor:(UIColor *)textColor textFontOfSize:(CGFloat)size
-{
-    UILabel * lab = [[UILabel alloc]init];
-    if (textColor) {
-        lab.textColor = textColor;
-    }else {
-        lab.textColor = [UIColor blackColor];
+    if (text) {
+        lab.text = text;
     }
     lab.backgroundColor = [UIColor clearColor];
     lab.font = [UIFont systemFontOfSize:size];
+    [superView addSubview:lab];
     return lab;
 }
 
-- (UILabel *)createLableWithTextColor:(UIColor *)textColor font:(UIFont *)font
-{
-    UILabel * lab = [[UILabel alloc]init];
-    if (textColor) {
-        lab.textColor = textColor;
-    }else {
-        lab.textColor = [UIColor blackColor];
-    }
-    lab.backgroundColor = [UIColor clearColor];
-    lab.font = font;
-    
-    return lab;
-}
 @end
 
 #pragma mark - <BlockButton>
