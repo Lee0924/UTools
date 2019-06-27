@@ -31,7 +31,7 @@ s.requires_arc = true
 
 #   按钮及Label
 s.subspec 'UIToolsLee' do |ss|
-    ss.source_files = "UToolsLee/ButtonTool/*.{h,m}"
+ss.source_files = "UToolsLee/ButtonTool/*.{h,m}", "UToolsLee/LabealTool/*.{h,m}"
     ss.frameworks = "Foundation","UIKit"
 # ss.dependency "Masonry", '~> 1.1.0'
 end
