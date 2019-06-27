@@ -1,7 +1,7 @@
 # 一个顺序：修改完本地的项目后要先上传到gitlab的仓库，再在gitlab的仓库添加标签，然后再把本地的项目push到pod的仓库，让后在终端更新下本地的pod仓库 pod repo update,然后把项目中的pod文件都删除只剩下Podfile文件，再重新pod install，按照这个顺序才有效
 Pod::Spec.new do |s|
 
-s.name         = 'UTools'
+s.name         = 'UToolsLee'
 s.version      = '0.0.1'
 #总结
 s.summary      = '快速创建UIButton以及UILabeal'
@@ -30,8 +30,8 @@ s.requires_arc = true
 # s.dependency "Masonry", '~> 1.1.0' #在项目引用时一定要用 <Masonry/Masonry.h>,不能用<Masonry.h>,其他第三方的也是一样
 
 #   按钮及Label
-s.subspec 'UITools' do |ss|
-    ss.source_files = "UTools/ButtonTool/*.{h,m}"
+s.subspec 'UIToolsLee' do |ss|
+    ss.source_files = "UTools/ButtonTool/**/*.{h,m}"
     ss.frameworks = "Foundation","UIKit"
 # ss.dependency "Masonry", '~> 1.1.0'
 end
