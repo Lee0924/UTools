@@ -36,4 +36,22 @@
     return lab;
 }
 
+- (UILabel *)createLableWithText:(NSString *)text textColor:(UIColor *)textColor textFontOfSize:(CGFloat)size superView:(UIView *)superView
+{
+    UILabel * lab = [[UILabel alloc]init];
+    if (textColor) {
+        lab.textColor = textColor;
+    }else {
+        lab.textColor = [UIColor blackColor];
+    }
+    
+    if (text) {
+        lab.text = text;
+    }
+    lab.backgroundColor = [UIColor clearColor];
+    lab.font = [UIFont systemFontOfSize:size];
+    [superView addSubview:lab];
+    return lab;
+}
+
 @end

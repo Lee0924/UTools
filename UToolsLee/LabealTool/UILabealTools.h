@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UILabel *)createLableWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)textColor textFontOfSize:(CGFloat)size superView:(UIView *)superView;
 
+- (UILabel *)createLableWithText:(NSString *)text textColor:(UIColor *)textColor textFontOfSize:(CGFloat)size superView:(UIView *)superView;
 
 @end
 
