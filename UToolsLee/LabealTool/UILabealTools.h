@@ -18,13 +18,22 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param frame     frame description
  *  @param text      text
  *  @param textColor textColor description
- *  @param size      size description
+ *  @param font      size description
  *  @param superView superView
  *  @return lable
  */
-- (UILabel *)createLableWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)textColor textFontOfSize:(CGFloat)size superView:(UIView *)superView;
+- (UILabel *)createLableWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)textColor textFont:(UIFont *)font superView:(UIView *)superView;
 
-- (UILabel *)createLableWithText:(NSString *)text textColor:(UIColor *)textColor textFontOfSize:(CGFloat)size superView:(UIView *)superView;
+/**
+ *  创建lable，设置标题颜色（颜色为nil时，为黑色） 文本字体大小
+ *
+ *  @param text      text
+ *  @param textColor textColor description
+ *  @param font      size description
+ *  @param superView superView
+ *  @return lable
+ */
+- (UILabel *)createLableWithText:(NSString *)text textColor:(UIColor *)textColor textFont:(UIFont *)font superView:(UIView *)superView;
 
 @end
 

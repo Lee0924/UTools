@@ -18,7 +18,7 @@
     });
     return instance;
 }
-- (UILabel *)createLableWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)textColor textFontOfSize:(CGFloat)size superView:(UIView *)superView
+- (UILabel *)createLableWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)textColor textFont:(UIFont *)font superView:(UIView *)superView
 {
     UILabel * lab = [[UILabel alloc]initWithFrame:frame];
     if (textColor) {
@@ -31,12 +31,12 @@
         lab.text = text;
     }
     lab.backgroundColor = [UIColor clearColor];
-    lab.font = [UIFont systemFontOfSize:size];
+    lab.font = font;
     [superView addSubview:lab];
     return lab;
 }
 
-- (UILabel *)createLableWithText:(NSString *)text textColor:(UIColor *)textColor textFontOfSize:(CGFloat)size superView:(UIView *)superView
+- (UILabel *)createLableWithText:(NSString *)text textColor:(UIColor *)textColor textFont:(UIFont *)font superView:(UIView *)superView
 {
     UILabel * lab = [[UILabel alloc]init];
     if (textColor) {
@@ -49,7 +49,7 @@
         lab.text = text;
     }
     lab.backgroundColor = [UIColor clearColor];
-    lab.font = [UIFont systemFontOfSize:size];
+    lab.font = font;
     [superView addSubview:lab];
     return lab;
 }

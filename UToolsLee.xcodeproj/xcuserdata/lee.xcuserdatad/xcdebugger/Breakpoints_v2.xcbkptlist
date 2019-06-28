@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "-createButtonWithImageName:title:titleColor:addTarget:action:superView:"
+            landmarkName = "-createButtonWithImageName:title:titleColor:titleFont:addTarget:action:superView:"
             landmarkType = "6">
          </BreakpointContent>
       </BreakpointProxy>
