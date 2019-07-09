@@ -8,7 +8,7 @@
 
 #import "UIButtonTools.h"
 @implementation UIButtonTools
-+(instancetype _Nullable)shareUITolls
++(instancetype _Nullable)shareUITools
 {
     static UIButtonTools *instance;
     static dispatch_once_t onceToken;

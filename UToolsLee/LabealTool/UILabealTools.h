@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UILabealTools : NSObject
-+(instancetype _Nullable)shareUITolls;
++(instancetype _Nullable)shareUITools;
 /**
  *  创建lable，设置标题颜色（颜色为nil时，为黑色） 文本字体大小
  *

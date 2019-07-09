@@ -12,7 +12,7 @@
 
 @interface UIButtonTools :NSObject
 
-+(instancetype _Nullable)shareUITolls;
++(instancetype _Nullable)shareUITools;
 
 /**根据传入的图片生成一个button按钮*/
 - (UIButton *)createButtonWithImageName:(NSString *)imageName addTarget:(id)target action:(SEL)action;

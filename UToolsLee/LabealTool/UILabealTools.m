@@ -9,7 +9,7 @@
 #import "UILabealTools.h"
 
 @implementation UILabealTools
-+(instancetype _Nullable)shareUITolls
++(instancetype _Nullable)shareUITools
 {
     static UILabealTools *instance;
     static dispatch_once_t onceToken;
